@@ -1,11 +1,4 @@
 async function func() {
-  let promise = new Promise((res, rej) => {
-    setTimeout(() => res('완료!'), 1000)
-  });
-
-  let result = await promise; // (*)
-
-  console.log(result);
+  return 1;
 }
-
-func();
+func().then(console.log);
